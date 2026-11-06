@@ -10929,6 +10929,15 @@ The following changes were made to improve clarity, readability, navigability an
     "title": "EduPerson",
     "href": "https://refeds.org/eduperson",
     "date": "ongoing"
+  },
+
+  "draft-ietf-plants-merkle-tree-certs": {
+    "title": "Merkle Tree Certificates",
+    "authors": ["David Benjamin", "Devon O'Brien", "Bas Westerbaan", "Luke Valenta", "Filippo Valsorda"],
+    "publisher": "Internet Engineering Task Force",
+    "href": "https://datatracker.ietf.org/doc/draft-ietf-plants-merkle-tree-certs/08/",
+    "status": "Internet-Draft",
+    "date": "1 November 2026"
   }
 
 }
