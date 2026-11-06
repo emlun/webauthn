@@ -8131,7 +8131,7 @@ When developing automated test harnesses, verifying new authenticator implementa
                     - `firmwareVersion`: <code>|rawOutput|["firmwareVersion"]</code>, if present.
                     - `mtcProof`: <code>|rawOutput|["mtcProof"]</code>, if present.
                     - `rootHash`: <code>|rawOutput|["rootHash"]</code>, if present.
-        4. When {{PublicKeyCredential/toJSON()}} is invoked on a {{PublicKeyCredential}} containing an `mtcDebug` client extension output, serialize `clientExtensionResults.mtcDebug` into a {{MtcDebugExtensionOutputJSON}} dictionary by base64url encoding the {{ArrayBuffer}} members `pubKey`, `mtcProof` (if present), and `rootHash` (if present) into {{Base64URLString}} values per [[#sctn-json-types]].
+        4. When {{PublicKeyCredential/toJSON()}} is invoked on a {{PublicKeyCredential}} containing an `mtcDebug` client extension output, serialize `clientExtensionResults.mtcDebug` into a {{MtcDebugExtensionOutputJSON}} dictionary by base64url encoding the {{ArrayBuffer}} members `pubKey`, `mtcProof` (if present), and `rootHash` (if present) into {{Base64URLString}} values.
 
     Note: During [=registration=] verification, if `authenticatorData.extensions` contains `"mtc-debug"` (or `clientExtensionResults.mtcDebug` is present) when the [=attestation statement format=] `fmt` is `"none"` or any format other than `"mtc"`, the [=[RP]=] MUST fail the [=registration ceremony=].
 
